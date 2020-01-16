@@ -2,7 +2,7 @@
 
 Collection of scripts I use to automate the creation of Windows and WSL environments. Leverages [Chocolatey](https://chocolatey.org/) to automate the installation of software and create repeatable, scripted Windows environments.
 
-Heavily inspired by [Nick Craver](https://github.com/NickCraver)'s [Windows10-Setup](https://gist.github.com/NickCraver/7ebf9efbfd0c3eab72e9) gist, [Jess Frazelle]'s [boxstarter.ps1](https://gist.github.com/jessfraz/7c319b046daa101a4aaef937a20ff41f) script, and the [Debloat-Windows-10](https://github.com/W4RH4WK/Debloat-Windows-10) project.
+Heavily inspired by [Nick Craver](https://nickcraver.com/)'s [Windows10-Setup](https://gist.github.com/NickCraver/7ebf9efbfd0c3eab72e9) gist, [Jess Frazelle](https://blog.jessfraz.com/)'s [boxstarter.ps1](https://gist.github.com/jessfraz/7c319b046daa101a4aaef937a20ff41f) script, and the [Debloat-Windows-10](https://github.com/W4RH4WK/Debloat-Windows-10) project.
 
 ## Usage
 
