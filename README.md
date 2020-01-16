@@ -40,6 +40,13 @@ To run it, open a WSL shell and execute:
 ./wslstarter.sh
 ```
 
+## Notes to self
+
+I also use this repo as a reference guide.
+
+- [Moving the Users directory to another drive](MOVING_USERS.md)
+- [Missing apps list](MISSING_APPS.md)
+
 ## License
 
 [MIT](LICENSE) &copy; [Hugo Manrique](https://hugmanrique.me)
