@@ -44,8 +44,8 @@ To run it, open a WSL shell and execute:
 
 I also use this repo as a reference guide.
 
-- [Moving the Users directory to another drive](MOVING_USERS.md)
-- [Missing apps list](MISSING_APPS.md)
+- [Moving the Users directory to another drive](notes/MOVING_USERS.md)
+- [Missing apps list](notes/MISSING_APPS.md)
 
 ## License
 
