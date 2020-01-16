@@ -36,5 +36,4 @@ choco upgrade -y gradle
 choco install -y vscode
 choco install -y jetbrainstoolbox
 
-
 Write-Output "Applications successfully installed."

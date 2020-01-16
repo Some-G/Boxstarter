@@ -30,7 +30,7 @@ Contrary to its name, it will run `choco upgrade` on non auto-updateable program
 
 ## Setting up WSL
 
-This repo also contains a bash setup script that creates the necessary links to share config files between the Windows user profile and the Linux user. It also installs some applications.
+This repo also contains a bash setup script that creates the necessary links to share config files between Windows and Linux user profiles. It also installs some applications.
 
 Note some config files need to be created manually prior to running this script.
 
