@@ -23,8 +23,8 @@ cd -
 # means we need to manually create bridge scripts to allow these programs to
 # call Linux binaries.
 #
-# The $WIN_HOME/wslbin path is intentionally not added to the path since some
+# The $WIN_HOME/.wslbin path is intentionally not added to the path since some
 # programs may have expectations not met when the binary is ran from WSL.
-cp -r bin/ "$WIN_HOME/wslbin"
+cp -r bin/ "$WIN_HOME/.wslbin"
 
 echo "Created links."
