@@ -9,6 +9,9 @@ if (-Not (Get-Command choco.exe -ErrorAction SilentlyContinue)) {
   iex ((New-Object System.Net.WebClient).DownloadString("https://chocolatey.org/install.ps1"))
 }
 
+# Fonts
+choco upgrade -y firacode
+
 choco install -y firefox
 choco install -y office365proplus
 choco upgrade -y authy-desktop
