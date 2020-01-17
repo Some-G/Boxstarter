@@ -40,6 +40,18 @@ To run it, open a WSL shell and execute:
 ./wslstarter.sh
 ```
 
+## Start VS Code in WSL mode
+
+_Depends on VS Code, WSL._
+
+First, install the `ms-vscode-remote.remote-wsl` VS Code extension. Next, follow [these steps](#usage), but instead of running `boxstarter.ps1`, execute:
+
+```powershell
+.\scripts\configureApps.ps1
+```
+
+Contextual "Open in Code" menus will now open the file/directory in a WSL session.
+
 ## Notes to self
 
 I also use this repo as a reference guide.
