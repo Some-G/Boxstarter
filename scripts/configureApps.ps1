@@ -25,6 +25,9 @@ If (Test-Path HKCR:\Directory\shell\VSCode\command) {
 Write-Output "Due to registry ownership issues, you must manually remove the following registry value manually:"
 Write-Output "Path: HKCR:\Directory\Background\shell\WSL Name: Extended"
 
+# App icon to "Open Linux shell here" context menu
+Set-ItemProperty -Path HKCR:\Directory\Background\shell\WSL -Name Icon -Type ExpandString -Value "D:\Users\Hugo\.wslbin\Ubuntu.ico"
+
 Remove-PSDrive -Scope script -Name HKCR
 
 Write-Output "Applications successfully configured."
