@@ -57,6 +57,7 @@ Contextual "Open in Code" menus will now open the file/directory in a WSL sessio
 I also use this repo as a reference guide.
 
 - [Moving the Users directory to another drive](notes/MOVING_USERS.md)
+- [Setting up Java](notes/SETTING_UP_JAVA.md)
 - [Missing apps list](notes/MISSING_APPS.md)
 
 ## License
