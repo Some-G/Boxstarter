@@ -2,10 +2,22 @@
 
 The `wslScripts/installApps.sh` script installs the OpenJDK, but we still need to manually set the `JAVA_HOME` env variable.
 
-First, open `~/.bashrc`. Then, add the following at the end of file:
+We first need to figure out where the `JAVA_HOME` dir is. Run the following:
 
 ```bash
-export JAVA_HOME=/usr/lib/jvm/open-jdk
+java -XshowSettings:properties -version 2>&1 > /dev/null | grep 'java.home'
+```
+
+That should print a line similar to:
+
+```properties
+    java.home = /usr/lib/jvm/java-11-openjdk-amd64
+```
+
+Now, open `~/.bashrc` and add the following at the end of file:
+
+```bash
+export JAVA_HOME=<REPLACE_ME>
 ```
 
 Save your changes and run `source ~/.bashrc`. Check the `JAVA_HOME` env variable has been set correctly by running `echo $JAVA_HOME`.
