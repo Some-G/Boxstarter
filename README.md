@@ -58,6 +58,7 @@ I also use this repo as a reference guide.
 
 - [Moving the Users directory to another drive](notes/MOVING_USERS.md)
 - [Setting up Java](notes/SETTING_UP_JAVA.md)
+- [Setting up git commit signing](notes/GPG_GIT.md)
 - [Missing apps list](notes/MISSING_APPS.md)
 
 ## License
