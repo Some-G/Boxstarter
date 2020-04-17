@@ -30,8 +30,8 @@ choco upgrade -y putty
 choco install -y winscp
 
 # Language libraries
-# VS Code fully supports using WSL, but Jetbrains products still rely on a local JDK install
-choco upgrade -y openjdk11 # LTS
+# VS Code fully supports JDK via WSL, but Jetbrains products still rely on a local JDK install
+choco upgrade -y openjdk14 # LTS
 choco upgrade -y maven
 choco upgrade -y gradle
 
