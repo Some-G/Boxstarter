@@ -15,4 +15,9 @@ Invoke-WebRequest -Uri https://aka.ms/wsl-ubuntu-1804 -OutFile Ubuntu.appx -UseB
 Add-AppxPackage -Path Ubuntu.appx
 Remove-Item Ubuntu.appx
 
+Write-Output "Setting up weekly APT updates..."
+Write-Output "REQUIRED: Read notes/APT_UPGRADES.md"
+
+schtasks /create /xml Task-LinuxUpgrade.xml /tn UpdateLinux
+
 Write-Output "WSL successfully enabled."
