@@ -24,7 +24,7 @@ Write-Output "Due to registry ownership issues, you must remove the following re
 Write-Output "Path: HKCR:\Directory\Background\shell\WSL`nName: Extended"
 
 # Add icon to "Open Linux shell here" context menu
-Set-ItemProperty -Path HKCR:\Directory\Background\shell\WSL -Name Icon -Type ExpandString -Value "D:\Users\$env:UserName\.wslbin\Ubuntu.ico"
+Set-ItemProperty -Path HKCR:\Directory\Background\shell\WSL -Name Icon -Type ExpandString -Value "$env:USERPROFILE\.wslbin\Ubuntu.ico"
 
 Remove-PSDrive -Scope script -Name HKCR
 
