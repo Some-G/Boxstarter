@@ -13,9 +13,7 @@ If (Test-Path HKCR:\Directory\shell\VSCode\command) {
 
   Set-ItemProperty -Path HKCR:\Directory\Background\shell\VSCode\command -Name "(default)" -Type ExpandString -Value ($template + '%V'')"')
   Set-ItemProperty -Path HKCR:\Directory\shell\VSCode\command -Name "(default)" -Type ExpandString -Value ($template + '%V'')"')
-
-  Write-Output "Due to the asterisk, you must change the following registry value manually:"
-  Write-Output ("Path: HKCR:\*\shell\VSCode\command Name: (default) Value: " + $template + '%1'')"')
+  Set-ItemProperty -LiteralPath "HKCR:\*\shell\VSCode\command" -Name "(default)" -Type ExpandString -Value ($template + '%1'')"')
 }
 
 # Make "Open Linux shell here" always show in context menu
@@ -23,10 +21,10 @@ If (Test-Path HKCR:\Directory\shell\VSCode\command) {
 # https://windowsreport.com/error-while-deleting-key-fix/
 #Remove-ItemProperty -Path HKCR:\Directory\Background\shell\WSL -Name "Extended"
 Write-Output "Due to registry ownership issues, you must manually remove the following registry value manually:"
-Write-Output "Path: HKCR:\Directory\Background\shell\WSL Name: Extended"
+Write-Output "Path: HKCR:\Directory\Background\shell\WSL`nName: Extended"
 
 # Add icon to "Open Linux shell here" context menu
-Set-ItemProperty -Path HKCR:\Directory\Background\shell\WSL -Name Icon -Type ExpandString -Value "D:\Users\Hugo\.wslbin\Ubuntu.ico"
+Set-ItemProperty -Path HKCR:\Directory\Background\shell\WSL -Name Icon -Type ExpandString -Value "D:\Users\$env:UserName\.wslbin\Ubuntu.ico"
 
 Remove-PSDrive -Scope script -Name HKCR
 

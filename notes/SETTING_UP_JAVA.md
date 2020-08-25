@@ -27,7 +27,7 @@ Save your changes and run `source ~/.bashrc`. Check the `JAVA_HOME` env variable
 Maven local repository defaults to `~/.m2/repository` on Linux, and `%USER_PROFILE%/.m2/repository` on Windows. In order to reduce duplicated dependencies and speed up future builds, open `~/.m2/settings.xml` on Linux and add the following config:
 
 ```xml
-<localRepository>/mnt/d/Users/Hugo/.m2/repository</localRepository>
+<localRepository>/mnt/d/Users/[YOUR_USERNAME]/.m2/repository</localRepository>
 ```
 
 _(See [http://maven.apache.org/settings.html] for a default `settings.xml` file)_
