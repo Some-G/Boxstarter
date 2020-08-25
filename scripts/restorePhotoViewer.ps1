@@ -4,19 +4,19 @@ Write-Output "Restoring Windows Photo Viewer..."
 
 New-PSDrive -Scope script -PSProvider registry -Root HKEY_LOCAL_MACHINE -Name HKLM
 
-If (!(Test-Path -Path HKLM:\SOFTWARE\Classes\Applications\photoviewer.dll\shell\open) {
+If (!(Test-Path -Path HKLM:\SOFTWARE\Classes\Applications\photoviewer.dll\shell\open)) {
   New-Item HKLM:\SOFTWARE\Classes\Applications\photoviewer.dll\shell\open
 }
-If (!(Test-Path -Path HKLM:\SOFTWARE\Classes\Applications\photoviewer.dll\shell\open\command) {
+If (!(Test-Path -Path HKLM:\SOFTWARE\Classes\Applications\photoviewer.dll\shell\open\command)) {
   New-Item HKLM:\SOFTWARE\Classes\Applications\photoviewer.dll\shell\open\command
 }
-If (!(Test-Path -Path HKLM:\SOFTWARE\Classes\Applications\photoviewer.dll\shell\open\DropTarget) {
+If (!(Test-Path -Path HKLM:\SOFTWARE\Classes\Applications\photoviewer.dll\shell\open\DropTarget)) {
   New-Item HKLM:\SOFTWARE\Classes\Applications\photoviewer.dll\shell\open\DropTarget
 }
-If (!(Test-Path -Path HKLM:\SOFTWARE\Classes\Applications\photoviewer.dll\shell\print\command) {
+If (!(Test-Path -Path HKLM:\SOFTWARE\Classes\Applications\photoviewer.dll\shell\print\command)) {
   New-Item HKLM:\SOFTWARE\Classes\Applications\photoviewer.dll\shell\print\command
 }
-If (!(Test-Path -Path HKLM:\SOFTWARE\Classes\Applications\photoviewer.dll\shell\print\DropTarget) {
+If (!(Test-Path -Path HKLM:\SOFTWARE\Classes\Applications\photoviewer.dll\shell\print\DropTarget)) {
   New-Item HKLM:\SOFTWARE\Classes\Applications\photoviewer.dll\shell\print\DropTarget
 }
 
