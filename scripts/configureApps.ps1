@@ -20,7 +20,7 @@ If (Test-Path HKCR:\Directory\shell\VSCode\command) {
 # This requires a registry ownership change described at
 # https://windowsreport.com/error-while-deleting-key-fix/
 #Remove-ItemProperty -Path HKCR:\Directory\Background\shell\WSL -Name "Extended"
-Write-Output "Due to registry ownership issues, you must manually remove the following registry value manually:"
+Write-Output "Due to registry ownership issues, you must remove the following registry value manually:"
 Write-Output "Path: HKCR:\Directory\Background\shell\WSL`nName: Extended"
 
 # Add icon to "Open Linux shell here" context menu
