@@ -2,6 +2,7 @@
 
 Write-Output "Removing Windows 10 Metro apps..."
 
+Get-AppxPackage Microsoft.549981C3F5F10 | Remove-AppxPackage # Cortana
 Get-AppxPackage Microsoft.3DBuilder | Remove-AppxPackage
 Get-AppxPackage Microsoft.Microsoft3DViewer | Remove-AppxPackage
 Get-AppxPackage Microsoft.Print3D | Remove-AppxPackage
